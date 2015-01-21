@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.coursera.camppotlatch" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:theme="@android:style/Theme.Holo.Light"
+        android:icon="@drawable/ic_launcher_landscape" >
+
+        <activity
+            android:name="org.coursera.camppotlatch.client.view.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="org.coursera.camppotlatch.client.view.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="org.coursera.camppotlatch.client.view.UserGiftsActivity"
+            android:label="User Gifts"
+            android:parentActivityName="org.coursera.camppotlatch.client.view.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.coursera.camppotlatch.client.view.RelatedGiftsActivity"
+            android:label="Related Gifts"
+            android:parentActivityName="org.coursera.camppotlatch.client.view.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="org.coursera.camppotlatch.client.view.CreateGiftActivity"
+            android:label="Create Gift"
+            android:parentActivityName="org.coursera.camppotlatch.client.view.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.coursera.camppotlatch.client.view.EditGiftActivity"
+            android:label="Edit Gift"
+            android:parentActivityName="org.coursera.camppotlatch.client.view.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.coursera.camppotlatch.client.view.ViewGiftActivity"
+            android:label="View Gift"
+            android:parentActivityName="org.coursera.camppotlatch.client.view.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.coursera.camppotlatch.client.view.ViewGiftImageActivity"
+            android:label="Gift Image View"
+            android:parentActivityName="org.coursera.camppotlatch.client.view.ViewGiftActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+
+        <activity
+            android:name="org.coursera.camppotlatch.client.view.CreateUserAccountActivity"
+            android:label="Create User"
+            android:parentActivityName="org.coursera.camppotlatch.client.view.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.coursera.camppotlatch.client.view.EditUserAccountActivity"
+            android:label="Edit User Account"
+            android:parentActivityName="org.coursera.camppotlatch.client.view.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.coursera.camppotlatch.client.view.ChangePasswordUserAccountActivity"
+            android:label="Change Password"
+            android:parentActivityName="org.coursera.camppotlatch.client.view.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="org.coursera.camppotlatch.client.androidservice.DataRefreshService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.coursera.camppotlatch.client.view.EditGiftActivity" >
+    <item android:id="@+id/action_remove_gift"
+        android:title="Remove"
+        android:showAsAction="never" />
+</menu>

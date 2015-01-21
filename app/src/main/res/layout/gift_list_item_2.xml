@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_relative_layout">
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="135dp"
+            android:id="@+id/image_view"
+            android:layout_gravity="left"
+            android:src="#fff2ff58"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:background="#999999"
+            android:alpha="0.5"
+            android:id="@+id/title_border"
+            android:layout_alignTop="@id/image_view">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Beach at the sunset"
+                android:id="@+id/title_text_view"
+                android:layout_alignStart="@id/image_view"
+                android:textColor="#000000"/>
+
+        </FrameLayout>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/gift_selection_checkbox" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="John Screen"
+                android:id="@+id/creator_text_view"
+                android:layout_weight="2"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="12/12/2012"
+                android:id="@+id/create_date_text_view"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:id="@+id/like_button"
+                    android:src="@drawable/ic_action_good"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="3"
+                    android:id="@+id/likes_count_text_view"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:id="@+id/report_button"
+                    android:src="@drawable/ic_action_report_flag"
+                    android:clickable="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="7"
+                    android:id="@+id/related_count_text_view"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" related gift(s)"
+                    android:id="@+id/related_text_view"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Here is the great hololo beach."
+        android:id="@+id/comments_text_view"
+        android:layout_alignStart="@id/image_view" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+</LinearLayout>

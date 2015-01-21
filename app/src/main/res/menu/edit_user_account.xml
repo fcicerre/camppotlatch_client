@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.coursera.camppotlatch.client.view.EditUserAccountActivity" >
+    <item android:id="@+id/action_change_password_user"
+        android:title="Change Password"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_remove_user"
+        android:title="Remove"
+        android:showAsAction="never" />
+</menu>
